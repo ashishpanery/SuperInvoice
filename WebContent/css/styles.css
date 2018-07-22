@@ -1,0 +1,217 @@
+.tile{
+	margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #79b7e7;
+    background: #d0e5f5 url(images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x;
+    font-weight: bold;
+    color: #1d5987;
+    transition: all 1s;
+}
+.chart_div{
+
+}
+#chart_table1 tr,
+#chart_table2 tr{
+	border: 1px solid #eee;
+	padding-top: 10px;
+	
+	 
+}
+.chart_img{
+	height: 300px;
+	width: 500px;
+	border: 1px solid gray
+	
+}
+label{
+	/* padding-left: 50px; */
+}
+.outerDiv {
+	width: 98%;
+	margin: 0 auto;
+}
+
+.mainContainer {
+
+	border-radius: 3px;
+	padding: 0px 10px 10px 10px;
+	
+}
+
+.nav-web-perf {
+	font-size: 15px;
+}
+
+.nav-web-perf span {
+	margin-right: 5px;	
+}
+
+.navbar-inverse a {
+	color: white !important;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	
+}
+.navbar-nav a:hover {
+	background-color: #447eb8 !important;
+}
+
+.navbar-inverse a.navbar-brand:hover {
+	background-color: transparent;
+}
+
+.navbar-nav>li>a {
+	padding-top: 9px;
+	padding-bottom: 10px;
+}
+
+.navbar-nav>li>a:hover {
+	background-color: #447eb8 !important;
+}
+
+.navbar-inverse {
+	background-color: #245a8c !important;
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a.active {
+	color: #69A8B1;
+	background-color: #447eb8;
+}
+
+.project-info {	
+	border-bottom: 1px solid #eee;
+	margin-top: 15px;
+	/* padding: 5px; */
+}
+
+.navbar-inverse li {	
+	margin-right: 5px;
+}
+
+.navbar {
+	margin-bottom: 5px;
+	border-radius: 0px 0px 4px 4px;
+	height: 40px;
+	min-height: 40px;
+}
+
+.runTimeParams {
+	margin-top: 10px;
+}
+
+label {	
+	width:100%;
+	font-size:13px;
+	margin-left: 25px;
+	margin-right: 25px;
+	font-weight: normal;
+}
+
+.runTimeParams td {
+	padding: 5px;
+}
+
+.actions-btn-group {
+	margin-left: 10px;
+}
+
+.navbar-brand {
+	height: 36px;
+}
+
+.navbar-brand a:hover {
+	background-color: #245a8c !important;
+}
+
+.actions-btn-group-projects {
+	margin-top: 10px;
+}
+
+
+chart{
+    display: none;
+    width: 40%;
+    height: 350px;
+}
+
+chartHits{
+    display: none;
+    width: 40%;
+    height: 350px;
+}
+
+.project-chart {
+	height: 320px;
+}
+
+.actions-img span {
+	cursor: pointer;
+}
+
+.btn {
+	/* padding: 0px; */
+}
+
+.projectsTable tbody :nth-child(1) td {
+	background-color: lightgray !important;
+}
+
+.statusFailed {
+	color: rgb(227,52,70);	
+}
+
+.statusPassed {
+	color: rgb(52,227,70);	
+}
+
+.logoDivImg {
+	width: 25px;
+	height: 30px;
+	margin-bottom: 6px;
+	margin-left: 3px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+sc-register {
+  background: #f0f0f0;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 2%;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+#sc-register h1 {
+  background: #3399cc;
+  padding: 20px 0;
+  font-size: 140%;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+
+div#sc-register .sc-container {
+  background: #f0f0f0;
+  padding: 6% 4%;
+}
+
+div#sc-register input[type="submit"] {
+  width: 30%;
+  background: #3399cc;
+  border: 0;
+  padding: 4%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  cursor: pointer;
+  transition: background .3s;
+  -webkit-transition: background .3s;
+  align: center-right;
+}
+
+div#sc-register input[type="submit"]:hover {
+  background: #2288bb;
+} 

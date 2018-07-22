@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="3.0">
+  <javaee:display-name>SuperInvoice</javaee:display-name>
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.glnetcomsolutions.web.Listener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>InvoiceMaster</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.InvoiceMasterServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>ExpenseMaster</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.ExpenseMasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExpenseMaster</servlet-name>
+    <url-pattern>/expenses.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InvoiceMaster</servlet-name>
+    <url-pattern>/invoice.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ItemDetail</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.ItemDetail</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ItemDetail</servlet-name>
+    <url-pattern>/ItemDetail.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>InvoiceTemplate</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.InvoiceTemplate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InvoiceTemplate</servlet-name>
+    <url-pattern>/invoicetemplate.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/user.do</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <servlet-name>Tax</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.TaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tax</servlet-name>
+    <url-pattern>/tax.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SMS</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.Sendsms</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SMS</servlet-name>
+    <url-pattern>/sendsms</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>companydetail</servlet-name>
+    <servlet-class>com.glnetcomsolutions.web.saveCompany</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>companydetail</servlet-name>
+    <url-pattern>/companydetail</url-pattern>
+  </servlet-mapping>
+
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>SecuredBookSite</web-resource-name>
+      <url-pattern>/secured/*</url-pattern>
+      <http-method>GET</http-method>
+      <http-method>POST</http-method>
+    </web-resource-collection>
+    <auth-constraint>
+      <description>
+            Let only managers use this app
+            </description>
+      <role-name>manager</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+  <security-role>
+    <javaee:role-name>admin</javaee:role-name>
+  </security-role>
+  
+  
+ <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>file-upload</param-name>
+    <param-value>
+    D:/Damini/Assignments/Invoice-Hojri/WebContent/CompanyLogoImages/
+     </param-value>
+  </context-param>
+  
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/logout.jsp</form-error-page>
+    </form-login-config>
+  </login-config>
+</web-app>
